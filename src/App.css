@@ -1,0 +1,104 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+    background: #1e48aa;
+    padding: 0 10px;
+}
+
+main {
+    max-width: 375px;
+    min-height: 380px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px 10px 0;
+    background: #f1f1f1;
+    color: #212121;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.loader-container {
+    /*hide content before loading */
+    background-color: #f1f1f1;
+    position: absolute;
+    z-index: 10;
+    inset: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.loader-container.active {
+    opacity: 1;
+    pointer-events: none;
+}
+
+.city-name {
+    font-family: Lato, sans-serif;
+    font-size: 50px;
+    color: #333;
+}
+
+.country-name {
+    font-size: 24px;
+    margin-bottom: 45px;
+    color: #606060;
+}
+
+.temperature {
+    font-family: Lato, sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.info-icon {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.info-hu {
+    display: block;
+    color: #212121;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.info-hu span {
+    font-weight: 700;
+}
+
+.error-information {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
